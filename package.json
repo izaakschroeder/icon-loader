@@ -1,6 +1,6 @@
 {
 	"name": "icon-loader",
-	"version": "0.1.0",
+	"version": "0.1.0-alpha1",
 	"description": "Icons with webpack.",
 	"author": "Izaak Schroeder <izaak.schroeder@gmail.com>",
 	"main": "lib/icon-loader.js",
@@ -8,7 +8,9 @@
 	"dependencies": {
 		"lodash": "^3.8.0",
 		"svgicons2svgfont": "^1.1.0",
-		"loader-utils": "^0.2.7"
+		"svgo": "^0.5.1",
+		"loader-utils": "^0.2.7",
+		"bl": "^0.9.4"
 	},
 	"devDependencies": {
 		"eslint": "^0.20.0",
