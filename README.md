@@ -1,9 +1,13 @@
 # icon-loader
 
-Load SVG icons.
+Load some icons.
 
 TODO:
  * [ ] Allow individual icon loading
+ * [ ] Support for ligatures https://github.com/nfroidure/svgicons2svgfont/pull/27
+ * [ ] Support spritemaps for non-svg
+ * [ ] Support automatic retina sizing for non-svg
+ * [ ] Support for inline svg via https://github.com/iconic/SVGInjector
 
 Configure webpack. To use icon fonts, [font-loader] must also be enabled.
 
@@ -70,11 +74,6 @@ const Aliases = {
 export {...FontAwesome ...MyIcons ...Aliases};
 ```
 
-TODO:
- * Support for ligatures https://github.com/nfroidure/svgicons2svgfont/pull/27
- * Support spritemaps for non-svg
- * Support automatic retina sizing for non-svg
- * Support for inline svg via https://github.com/iconic/SVGInjector
 
 https://github.com/jakesgordon/bin-packing
 https://github.com/richardbutler/node-spritesheet
