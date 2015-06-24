@@ -1,0 +1,27 @@
+
+.icon {
+	display: inline-block;
+	// shortening font declaration
+	font: normal normal normal #{$fa-font-size-base}/1 FontAwesome;
+	// can't have font-size inherit on line above, so need to override
+	font-size: inherit;
+	// optimizelegibility throws things off #1094
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	// ensures no half-pixel rendering in firefox
+	transform: translate(0, 0);
+}
+
+.icon-fixed-width {
+	width: (18em / 14);
+	text-align: center;
+}
+
+.icon-border {
+	padding: .2em .25em .15em;
+	border: solid .08em inherit;
+	border-radius: .1em;
+}
+
+<%=icons%>

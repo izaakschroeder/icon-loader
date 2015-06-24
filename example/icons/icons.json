@@ -2,5 +2,9 @@
 	"name": "Font Awesome",
 	"author": "Dave Gandy",
 	"ascent": 850,
-	"descent": 150
+	"descent": 150,
+	"icons": [{
+		"name": "Bomb",
+		"path": "./bomb.svg"
+	}]
 }

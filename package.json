@@ -6,11 +6,11 @@
 	"main": "lib/icon-loader.js",
 	"repository": "izaakschroeder/icon-loader",
 	"dependencies": {
-		"lodash": "^3.8.0",
-		"svgicons2svgfont": "^1.1.0",
-		"svgo": "^0.5.1",
+		"lodash": "^3.9.3",
+		"svgicons2svgfont": "^3.0.2",
+		"svgo": "^0.5.3",
 		"loader-utils": "^0.2.7",
-		"bl": "^0.9.4"
+		"bl": "^1.0.0"
 	},
 	"devDependencies": {
 		"eslint": "^0.20.0",

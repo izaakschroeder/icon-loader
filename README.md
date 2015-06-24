@@ -2,6 +2,17 @@
 
 Load some icons.
 
+
+Roughly:
+ * `@import` resolves to an image file (svg/png/etc.)
+ * `icon-loader` transforms that image file into CSS with refs
+ * collect all icons referenced and
+  * pack their css + glyphs into font
+  * pack their images into spritemaps
+ * for every entry point inject a url to the font/spritemaps
+
+By default bundle icons in their original modules? e.g. icons-foo and icons-bar generate icons-foo.svg and icons-bar.svg unless loader configures name; e.g. `icons?name=baz` then both would be merged into one.
+
 TODO:
  * [ ] Allow individual icon loading
  * [ ] Support for ligatures https://github.com/nfroidure/svgicons2svgfont/pull/27
@@ -48,6 +59,13 @@ React:
 
 ```javascript
 import Icons, { MyIcon } from 'icons';
+
+/*
+Icon.glyph?
+Icon.font?
+Icon.image?
+...
+ */
 
 export default class Something extends Component {
 	render() {
